@@ -7,3 +7,7 @@ With HTTP Streaming, the server is configured to hold on to a specific request f
 To achieve an indefinite response, the server must respond to client requests by specifying Transfer Encoding: chunked in the header. This sets up a persistent connection from server to client and allows the server to send response data in chunks of newline-delimited strings. These chunks of data can then be received and processed on-the-fly by the client.
 
 Alternatively, the data may be streamed via the Server-Sent Events (SSE) method, for which there is a standardized HTML5 API called EventSource. With SSE, data is encoded as text/event-stream in the header.
+
+# Refs
+
+- [HTTP Streaming](https://www.pubnub.com/learn/glossary/what-is-http-streaming/)
